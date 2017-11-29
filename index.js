@@ -19,6 +19,6 @@ app.get('/', function (req, res) {
 })
 
 app.get('/api', function (req, res) {
-   stepsCount = Math.random()*100 |0;
-   res.send({results:stepsCount});
+   var arr = [Math.random()*100 |0, Math.random()*100 |0, Math.random()*100 |0, Math.random()*100 |0, Math.random()*100 |0, Math.random()*100 |0];
+   res.send({results:arr});
 })
